@@ -1,0 +1,23 @@
+<div class="nav">
+  <%= link_to sharx_about_path do %>
+    <%= image_tag "sharx.png", size: "64x64", class: "sharx" %>
+  <% end %>
+  <%= link_to sharx_path do %>
+    <%= image_tag "home.svg", size: "32x32", class: "img" %>
+  <% end %>
+  <%= link_to sharx_path + File.realpath("Pictures", Dir.home) do %>
+    <%= image_tag "picture.svg", size: "32x32", class: "img" %>
+  <% end %>
+  <%= link_to sharx_path + File.realpath("Videos", Dir.home) do %>
+    <%= image_tag "video.svg", size: "32x32", class: "img" %>
+  <% end %>
+  <%= link_to sharx_path + File.realpath("Music", Dir.home) do %>
+    <%= image_tag "music.svg", size: "32x32", class: "img" %>
+  <% end %>
+  <%= link_to sharx_path + File.realpath("Documents", Dir.home) do %>
+    <%= image_tag "document.svg", size: "32x32", class: "img" %>
+  <% end %>
+  <%= link_to sharx_new_path, title: "Upload File" do %>
+    <%= image_tag "upload.svg", size: "32x32", class: "img" %>
+  <% end %>
+</div>

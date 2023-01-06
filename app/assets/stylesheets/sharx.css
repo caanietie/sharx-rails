@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  vertical-align: middle;
+}
+
+.container {
+  width: 78%;
+  display: flex;
+}
+
+.nav {
+  width: 12%;
+  margin: 10px;
+  display: flex;
+  border-width: 1px;
+  align-items: center;
+  border-style: solid;
+  flex-direction: column;
+}
+
+.nav > a {
+  margin: 5px 0;
+}
+
+.nav > a:hover {
+  background-color: lightgreen;
+}
+
+.sharx {
+  border-radius: 50%;
+}
+
+.home {
+  margin: 10px 0px;
+}
+
+.home_dir {
+  gap: 5px;
+  display: flex;
+}
+
+.footer {
+  bottom: 20px;
+  position: relative;
+}
+
+.img {
+  filter: grayscale(20%)
+}

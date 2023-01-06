@@ -1,0 +1,11 @@
+<%= render "shared/header_footer" do %>
+  <div class="container">
+    <%= render "shared/navigation" %>
+    <div style="margin:10px 0px">
+      <%= form_with url: sharx_create_path do |form| %>
+        <%= form.file_field :file, multiple: true, require: true %>
+        <br><br><%= form.submit "Upload files" %>
+      <% end %>
+    </div>
+  </div>
+<% end %>
